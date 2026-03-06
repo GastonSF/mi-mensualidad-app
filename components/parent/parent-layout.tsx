@@ -51,6 +51,9 @@ export function ParentLayout() {
             <h1 className="text-base font-extrabold text-foreground" style={{ fontFamily: "var(--font-heading)" }}>
               Mi Mensualidad
             </h1>
+            
+            <Button variant="secondary" size="sm">Agregar hijo</Button>
+            
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="outline" size="sm" className="gap-1">
