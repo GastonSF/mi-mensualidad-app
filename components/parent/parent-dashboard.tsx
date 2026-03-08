@@ -49,9 +49,6 @@ export function ParentDashboard({ kid }: ParentDashboardProps) {
 
   return (
 <>
-  <div className="rounded-xl border border-border bg-card p-4 mb-4">
-    <h3 className="text-base font-bold text-foreground">Gestionar hijos</h3>
-  </div>
 
   <div className="flex flex-col gap-4">
     <div className="flex flex-col gap-4">
@@ -59,6 +56,9 @@ export function ParentDashboard({ kid }: ParentDashboardProps) {
         Panel de {kid.name}
       </h2>
 
+      <div className="rounded-xl border border-border bg-card p-4 mb-4">
+      <h3 className="text-base font-bold text-foreground">Gestionar hijos</h3>
+  </div>
       {/* Summary cards */}
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
         <Card className="border-border">
