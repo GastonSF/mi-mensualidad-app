@@ -48,6 +48,7 @@ export function ParentDashboard({ kid }: ParentDashboardProps) {
   const formatMoney = (val: number) => `$${val.toLocaleString("es-CO")}`
 
   return (
+<>
   <div className="rounded-xl border border-border bg-card p-4 mb-4">
     <h3 className="text-base font-bold text-foreground">Gestionar hijos</h3>
   </div>
@@ -196,4 +197,7 @@ export function ParentDashboard({ kid }: ParentDashboardProps) {
       </div>
     </div>
   )
+      </div>
+  </>
+)
 }
