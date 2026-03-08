@@ -48,6 +48,12 @@ export function ParentDashboard({ kid }: ParentDashboardProps) {
   const formatMoney = (val: number) => `$${val.toLocaleString("es-CO")}`
 
   return (
+    return (
+  <div className="rounded-xl border border-border bg-card p-4 mb-4">
+    <h3 className="text-base font-bold text-foreground">Gestionar hijos</h3>
+  </div>
+
+  <div className="flex flex-col gap-4">
     <div className="flex flex-col gap-4">
       <h2 className="text-lg font-bold text-foreground" style={{ fontFamily: "var(--font-heading)" }}>
         Panel de {kid.name}
