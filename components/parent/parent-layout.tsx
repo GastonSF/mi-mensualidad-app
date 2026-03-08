@@ -52,8 +52,6 @@ export function ParentLayout() {
               Mi Mensualidad
             </h1>
             
-            <Button variant="secondary" size="sm">Agregar hijo</Button>
-            
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="outline" size="sm" className="gap-1">
