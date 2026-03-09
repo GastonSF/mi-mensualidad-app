@@ -224,6 +224,7 @@ export function ParentDashboard({ kid }: ParentDashboardProps) {
     </div>
   )
       </div>
+  </div>
   </>
 )
 }
