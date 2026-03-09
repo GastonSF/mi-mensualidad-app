@@ -56,9 +56,34 @@ export function ParentDashboard({ kid }: ParentDashboardProps) {
         Panel de {kid.name}
       </h2>
 
-      <div className="rounded-xl border border-border bg-card p-4 mb-4">
-      <h3 className="text-base font-bold text-foreground">Gestionar hijos</h3>
+     <div className="rounded-xl border border-border bg-card p-4 mb-4">
+  <div className="mb-3 flex items-center justify-between">
+    <h3 className="text-base font-bold text-foreground">Gestionar hijos</h3>
+    <Button variant="secondary" size="sm">Nuevo hijo</Button>
   </div>
+
+  <div className="flex flex-col gap-2">
+    {state.kids.map((child) => (
+      <div
+        key={child.id}
+        className="flex items-center justify-between rounded-lg border border-border px-3 py-2"
+      >
+        <div>
+          <div className="font-medium text-foreground">{child.name}</div>
+          <div className="text-sm text-muted-foreground">
+            ${child.monthlyAllowance.toLocaleString("es-AR")} · mensual
+          </div>
+        </div>
+
+        <div className="flex gap-2">
+          <Button variant="outline" size="sm">Seleccionar</Button>
+          <Button variant="outline" size="sm">Editar</Button>
+          <Button variant="destructive" size="sm">Eliminar</Button>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
       {/* Summary cards */}
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
         <Card className="border-border">
